@@ -1,12 +1,16 @@
 body {
-  padding-top: 60px;
+  padding-top: 0px;
   font-family: 'Prompt', sans-serif;
 
 }
-
+.navbar-light {
+  background-color:#F36F21;
+  border-color: #E7E7E7;
+  
+}
 
 .price-box {
-  margin: 0 auto;
+  margin: 60px auto;
   background: #E9E9E9;
   border-radius: 10px;
   padding: 40px 15px;
