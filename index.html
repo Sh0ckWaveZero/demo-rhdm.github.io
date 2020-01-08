@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>เลือกแพ็คเกจ</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="price-box">
+        <div class="row">
+          <div class="col-sm-12">
+                <form  class="form-horizontal form-pricing" role="form">
+                  <div class="price-slider">
+                    <h4 class="great">ค่าใช้บริการรายเดือน</h4>
+                    <span>Maximum ฿1000 is required</span>
+                    <div class="col-sm-12">
+                      <div id="slider_amirol"></div>
+                    </div>
+                  </div>
+                  <div class="price-slider">
+                    <h4 class="great">จำนวนการบริมาณการโทร</h4>
+                    <span>Please choose one</span>
+                    <div class="col-sm-12">
+                      <div id="slider_calls"></div>
+                    </div>
+                  </div>
+                  <div class="price-slider">
+                    <h4 class="great">ปริการการใช้ อินเตอร์เน็ต</h4>
+                    <span>Please choose one</span>
+                      <input name="sliderVal" type="hidden" id="sliderVal" value='0' readonly="readonly" />
+                      <input name="sliderCallsVal" type="hidden" id="sliderCallsVal" value='0' readonly="readonly" />
+                      <input name="sliderInternetVal" type="hidden" id="sliderInternetVal" value='0' readonly="readonly" />
+                <div class="col-sm-12">
+                  <div id="slider_internet"></div>
+                </div>
+                <div style="margin-top:80px"></div>
+                  <hr class="style">
+                  <div class="form-group">
+                      <div class="col-sm-12">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="calcualtePrice()">
+                          Proceed 
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+        </div>
+        <div id="alertModal" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title" style="color: #f36f21;"></h4>
+                  </div>
+                  <div class="modal-body">
+                      <p></p>
+                  </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal">
+                          Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
